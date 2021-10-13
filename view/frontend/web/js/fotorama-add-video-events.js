@@ -5,7 +5,7 @@
 
 define([
     'jquery',
-    'jquery-ui-modules/widget',
+    'jquery/ui',
     'catalogGallery',
     'loadPlayer'
 ], function ($) {
@@ -177,14 +177,12 @@ define([
          * @private
          */
         clearEvents: function () {
-            if (this.fotoramaItem !== undefined) {
-                this.fotoramaItem.off(
-                    'fotorama:show.' + this.PV +
-                    ' fotorama:showend.' + this.PV +
-                    ' fotorama:fullscreenenter.' + this.PV +
-                    ' fotorama:fullscreenexit.' + this.PV
-                );
-            }
+            this.fotoramaItem.off(
+                'fotorama:show.' + this.PV +
+                ' fotorama:showend.' + this.PV +
+                ' fotorama:fullscreenenter.' + this.PV +
+                ' fotorama:fullscreenexit.' + this.PV
+            );
         },
 
         /**
