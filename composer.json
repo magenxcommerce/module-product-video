@@ -1,0 +1,34 @@
+{
+    "name": "magenxcommerce/module-product-video",
+    "description": "Add Video to Products",
+    "require": {
+        "php": "~7.0.13|~7.1.0",
+        "magenxcommerce/module-catalog": "102.0.*",
+        "magenxcommerce/module-backend": "100.2.*",
+        "magenxcommerce/module-eav": "101.0.*",
+        "magenxcommerce/module-media-storage": "100.2.*",
+        "magenxcommerce/module-store": "100.2.*",
+        "magenxcommerce/framework": "101.0.*",
+        "magenxcommerce/magento-composer-installer": "*"
+    },
+    "suggest": {
+        "magenxcommerce/module-customer": "101.0.*",
+        "magenxcommerce/module-config": "101.0.*"
+    },
+    "type": "magento2-module",
+    "version": "100.2.6",
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magento\\ProductVideo\\": ""
+        }
+    },
+    "replace": {
+        "magento/module-product-video": "*"
+    }
+}
